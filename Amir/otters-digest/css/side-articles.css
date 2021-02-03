@@ -1,0 +1,110 @@
+/*Articles Boxes*/
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column-articles {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  overflow: hidden;
+}
+
+.card {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: #f2dbbc;
+}
+
+.card img {
+  width: 100%;
+  padding: 10px;
+}
+
+.image-article-container img:hover {
+  -webkit-transition: 1s ease-out;
+  -moz-transition: 1s ease-out;
+  -o-transition: 1s ease-out;
+  -ms-transition: 1s ease-out;
+  transition: 1s ease-out;
+  -webkit-transform:scale(1.12); /* Safari and Chrome */
+  -moz-transform:scale(1.12); /* Firefox */
+  -ms-transform:scale(1.12); /* IE 9 */
+  -o-transform:scale(1.12); /* Opera */
+  transform:scale(1.12);
+}
+
+.image-article-container {
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.article-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.7rem;
+}
+
+@media (max-width: 800px) {
+  .article-title a {
+    font-size: 0.3rem;
+  }
+}
+
+.article-author {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 824px) {
+.column-articles {
+  width: 100%;
+  display: block;
+}
+}
+
+.center {
+  text-align: center;
+}
+
+/*Left and right side*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column-left {
+  padding: 2px;
+  flex: 70%;
+}
+
+.flex-column-right {
+  padding: 2px;
+  flex: 30%;
+}
+
+@media (max-width: 824px) {
+  .content-box {
+    flex-direction: column;
+  }
+}
