@@ -12,6 +12,8 @@ header img {
 
 #threecols {
   display: flex;
+  font-family: Arial;
+
 }
 
 .column {
@@ -27,6 +29,7 @@ header img {
   padding: 10px;
   overflow: scroll;
   max-height: 375px;
+  font-family: Arial;
 }
 
 ul.topnav {
@@ -51,6 +54,7 @@ ul.topnav li a {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1rem;
+  font-family: Arial
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -90,6 +94,7 @@ footer li a {
   text-decoration: none;
   font-weight: bolder;
   font-size: 1rem;
+  font-family: Arial
 }
 
 footer li a:hover:not(.active) {
@@ -105,4 +110,9 @@ footer li a.active {
   footer li {
     float: none;
   }
+}
+
+#big {
+  padding: 35px;
+  background-color: #E5E5E5;
 }
