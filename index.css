@@ -1,2 +1,17 @@
+h1, h2, {
+  color: green;
+  font-size: 200%;
+}
 
-  background-color: lightblue
+body {
+    font-family: Times;
+    background-color: blue;
+    padding: 25px;
+    font-size: 120%;
+}
+
+#content {
+    padding: 50px;
+    background-color: lightblue;
+    border: solid 3px #333333;
+    min-height: 70vh;
